@@ -1,0 +1,11 @@
+{
+  "bindings": [
+    {
+      "name": "changes",
+      "type": "sqlTrigger",
+      "direction": "in",
+      "tableName": "dbo.VehicleTracker",
+      "connectionStringSetting": "SqlConnectionString"
+    }
+  ]
+}
