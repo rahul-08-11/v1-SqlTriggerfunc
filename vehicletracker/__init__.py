@@ -4,7 +4,8 @@ import requests
 
 def add_ifbid_vehicles(details):
     try:
-        name = details.get("Year") + " " + details.get("Make") + " " + details.get("Model") + " " + details.get("Trim") + "-" +details.get("Odometer Amount")+ "-" + details.get("Vin") 
+        name = f"{details.get('Year', '')} {details.get('Make', '')} {details.get('Model', '')} {details.get('Trim', '')} - {details.get('Odometer Amount', '')} - {details.get('Vin', '')}"
+
         data = {
             "Name":name,
             "VIN": details.get("Vin"),
