@@ -24,7 +24,8 @@ def add_ifbid_vehicles(details):
             "VehicleCaptureType": details.get("Vehicle Capture Type"),
             "Carfax_URL": details.get("Carfax_URL"),
             "Vehicle_Image_Url": "//example.com",#details.get("Image_Link"),
-            "Source":"IN_IFBID"
+            "Source":"IN_IFBID",
+            "Status":details.get("InStatus"),
         }
         url = "https://bubble-service-major.azurewebsites.net/api/register-vehicle-lead?code=Pc80TXSbJT1UL5dmCcZJmFWndDQLKT8-2oqxkK43PgEAAzFuBPsS-A%3D%3D"
 
